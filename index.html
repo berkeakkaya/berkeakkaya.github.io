@@ -55,15 +55,23 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
 }
 @media(max-width:600px){
   .wrap{padding:0 20px}
-  nav{min-height:76px}
-  .navlinks .btn{padding:11px 15px;font-size:12px}
+  nav{min-height:76px;align-items:flex-start;padding-top:18px}
+  .navlinks .btn{padding:10px 14px;font-size:11px;max-width:146px;text-align:center;line-height:1.25}
   .brand{font-size:18px}
-  .hero{padding-bottom:70px}
-  .hero h1{font-size:47px}
-  .hero .role{font-size:20px}
-  .hero p{font-size:16px}
+  .brand small{font-size:9px;letter-spacing:.16em}
+  .hero{padding:34px 0 70px;display:flex;flex-direction:column;gap:24px}
+  .hero > div:first-child{display:contents}
+  .hero .eyebrow{order:1}
+  .hero h1{font-size:47px;order:2;margin:6px 0 0}
+  .hero .role{font-size:20px;order:3;margin:0 0 4px}
+  .hero .intro{order:4;font-size:17px;margin:0;color:var(--muted)}
+  .photo{order:5;margin:8px 0 2px}
+  .photo:before{inset:14px -10px -12px 14px}
+  .photo img{height:430px;border-radius:120px 120px 20px 20px;object-position:center 42%}
+  .hero .details{order:6;font-size:16px;margin:4px 0 0}
+  .hero .actions{order:7}
+  .hero .meta{order:8;margin-top:6px;font-size:13px}
   .btn.alt{margin:10px 0 0 0}
-  .photo img{height:470px}
   .cards{grid-template-columns:1fr}
   .section{padding:68px 0}
   .section h2{font-size:38px}
@@ -89,10 +97,12 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
     <div class="eyebrow">Ümraniye, İstanbul · Online görüşme</div>
     <h1>Berke Akkaya</h1>
     <div class="role">Dil ve Konuşma Terapisti</div>
-    <p><strong>Çocuk, ergen ve yetişkinlerde dil, konuşma ve iletişim terapisi.</strong><br><br>
-    Gecikmiş konuşma, kekemelik, konuşma sesi bozuklukları, gelişimsel dil bozuklukları ve iletişim güçlüklerine yönelik değerlendirme ve terapi.</p>
-    <a class="btn" href="https://wa.me/905340666287?text=Merhaba%20Berke%20Bey%2C%20dil%20ve%20konu%C5%9Fma%20terapisi%20hakk%C4%B1nda%20bilgi%20almak%20ve%20randevu%20olu%C5%9Fturmak%20istiyorum." target="_blank">WhatsApp'tan İletişime Geç</a>
-    <a class="btn alt" href="#alanlar">Çalışma Alanlarım</a>
+    <p class="intro"><strong>Çocuk, ergen ve yetişkinlerde dil, konuşma ve iletişim terapisi.</strong></p>
+    <p class="details">Gecikmiş konuşma, kekemelik, konuşma sesi bozuklukları, gelişimsel dil bozuklukları ve iletişim güçlüklerine yönelik değerlendirme ve terapi.</p>
+    <div class="actions">
+      <a class="btn" href="https://wa.me/905340666287?text=Merhaba%20Berke%20Bey%2C%20dil%20ve%20konu%C5%9Fma%20terapisi%20hakk%C4%B1nda%20bilgi%20almak%20ve%20randevu%20olu%C5%9Fturmak%20istiyorum." target="_blank">WhatsApp'tan İletişime Geç</a>
+      <a class="btn alt" href="#alanlar">Çalışma Alanlarım</a>
+    </div>
     <div class="meta">Yüz yüze: Ümraniye, İstanbul &nbsp;·&nbsp; Online görüşme imkânı</div>
   </div>
   <div class="photo">
