@@ -210,10 +210,19 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
 
     </div>
 
-    <p style="text-align:center;opacity:.65;font-size:14px;margin-top:8px;">
-      ← Fotoğrafları görmek için kaydırın →
-    </p>
+    <div style="display:flex;justify-content:center;gap:12px;margin-top:12px;">
+  <button
+    onclick="document.querySelector('[style*=&quot;overflow-x:auto&quot;]').scrollBy({left:-360,behavior:'smooth'})"
+    style="width:46px;height:46px;border:none;border-radius:50%;font-size:24px;cursor:pointer;">
+    ‹
+  </button>
 
+  <button
+    onclick="document.querySelector('[style*=&quot;overflow-x:auto&quot;]').scrollBy({left:360,behavior:'smooth'})"
+    style="width:46px;height:46px;border:none;border-radius:50%;font-size:24px;cursor:pointer;">
+    ›
+  </button>
+</div>
   </div>
 </section>
  <section class="section">
