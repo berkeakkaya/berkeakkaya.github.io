@@ -133,10 +133,29 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
   }
 }
 
-
+.mobile-swipe-hint {
+  display: none;
+}
 /* TELEFON GALERİ */
 @media (max-width: 700px) {
+ .mobile-swipe-hint {
+  display: block;
+  text-align: center;
+  margin: 12px 0 18px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: #202622;
+  animation: swipeHint 1.4s ease-in-out infinite alternate;
+}
 
+@keyframes swipeHint {
+  from { transform: translateX(-7px); opacity: .65; }
+  to   { transform: translateX(7px); opacity: 1; }
+}
+.desktop-gallery-arrows {
+  display: none !important;
+}
   #seanslar div[style*="overflow-x:auto"] {
     gap: 0 !important;
     padding-bottom: 15px !important;
@@ -313,6 +332,7 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
       <div class="eyebrow">SEANSLARDAN KARELER</div>
       <h2>Terapi sürecinden küçük anlar</h2>
       <p>Seanslarda çocuğun ihtiyaçlarına uygun, oyun ve etkileşim temelli çalışmalar gerçekleştiriyoruz.</p>
+     <div class="mobile-swipe-hint">← &nbsp; Fotoğrafları kaydır &nbsp; →</div>
     </div>
 
    <div id="seanslar" style="
@@ -349,22 +369,19 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
         style="width:320px;height:430px;object-fit:cover;border-radius:24px;flex:0 0 auto;scroll-snap-align:start;">
 
     </div>
-
-   <div style="display:flex;justify-content:center;gap:16px;margin-top:16px;">
-  <button
-    onclick="this.parentElement.previousElementSibling.scrollBy({left:-this.parentElement.previousElementSibling.clientWidth,behavior:'smooth'})"
-    aria-label="Önceki fotoğraf"
-    style="width:54px;height:54px;border:none;border-radius:50%;background:#202622;color:white;font-size:34px;font-weight:bold;line-height:1;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.18);">
+   <div class="desktop-gallery-arrows" style="display:flex;justify-content:center;gap:16px;margin-top:16px;">
+  <button onclick="document.getElementById('seanslar').scrollBy({left:-338,behavior:'smooth'})"
+    style="width:54px;height:54px;border:none;border-radius:50%;background:#202622;color:white;font-size:34px;font-weight:bold;cursor:pointer;">
     ‹
   </button>
 
-  <button
-    onclick="this.parentElement.previousElementSibling.scrollBy({left:this.parentElement.previousElementSibling.clientWidth,behavior:'smooth'})"
-    aria-label="Sonraki fotoğraf"
-    style="width:54px;height:54px;border:none;border-radius:50%;background:#202622;color:white;font-size:34px;font-weight:bold;line-height:1;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.18);">
+  <button onclick="document.getElementById('seanslar').scrollBy({left:338,behavior:'smooth'})"
+    style="width:54px;height:54px;border:none;border-radius:50%;background:#202622;color:white;font-size:34px;font-weight:bold;cursor:pointer;">
     ›
   </button>
 </div>
+
+  
   </div>
 </section>
  <section class="section">
