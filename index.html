@@ -127,7 +127,33 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
   body {
     overflow-x: hidden;
   }
-}</style>
+}
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+/* TELEFON GALERİ */
+@media (max-width: 700px) {
+
+  #seanslar div[style*="overflow-x:auto"] {
+    gap: 0 !important;
+    padding-bottom: 15px !important;
+    scroll-snap-type: x mandatory !important;
+  }
+
+  #seanslar div[style*="overflow-x:auto"] img {
+    width: 100% !important;
+    min-width: 100% !important;
+    flex: 0 0 100% !important;
+    height: 430px !important;
+    object-fit: cover !important;
+    scroll-snap-align: center !important;
+  }
+
+}
+</style>
 </head>
 <body>
 
