@@ -96,7 +96,38 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
   .cta{display:block;padding:34px}
   .cta .btn{margin-top:24px}
 }
-</style>
+/* TELEFON GÖRÜNÜMÜ */
+@media (max-width: 700px) {
+
+  /* Hakkımda: yan yana değil alt alta */
+  #hakkimda > div {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  /* Hakkımda fotoğrafı */
+  #hakkimda img {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Eğitim kartları: tek sütun */
+  #hakkimda h3 + div {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  #hakkimda .card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Sayfanın yatay taşmasını engelle */
+  body {
+    overflow-x: hidden;
+  }
+}</style>
 </head>
 <body>
 
