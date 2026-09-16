@@ -135,6 +135,41 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
 
 .mobile-swipe-hint {
   display: none;
+}/* SIK SORULAN SORULAR */
+#sss details {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  padding: 0 20px;
+}
+
+#sss summary {
+  padding: 20px 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  list-style: none;
+  position: relative;
+  padding-right: 40px;
+}
+
+#sss summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#sss details[open] summary::after {
+  content: "−";
+}
+
+#sss details p {
+  margin: 0;
+  padding: 0 0 20px 0;
+  line-height: 1.7;
 }
 /* TELEFON GALERİ */
 @media (max-width: 700px) {
@@ -396,15 +431,43 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
     <h2>Dil ve Konuşma Terapisi Hakkında</h2>
 
     <div style="margin-top:30px;">
-      <h3>Dil ve konuşma terapistine ne zaman başvurulmalı?</h3>
-      <p>Çocuğunuzun konuşmasının yaşıtlarına göre geride olduğunu düşünüyorsanız, konuşmasının anlaşılması güçse, kekemelik yaşıyorsa veya iletişim becerileriyle ilgili endişeleriniz varsa dil ve konuşma terapisti tarafından değerlendirme yapılabilir.</p>
 
-      <h3>Ümraniye'de yüz yüze görüşme yapıyor musunuz?</h3>
-      <p>Evet. İstanbul Ümraniye'de çocuk, ergen ve yetişkinlere yönelik değerlendirme ve dil ve konuşma terapisi hizmeti sunuyorum.</p>
+  <details>
+    <summary>Dil ve konuşma terapistine ne zaman başvurulmalı?</summary>
+    <p>Çocuğunuzun konuşmasının yaşıtlarına göre geride olduğunu düşünüyorsanız, konuşmasının anlaşılması güçse, kekemelik yaşıyorsa veya iletişim becerileriyle ilgili endişeleriniz varsa dil ve konuşma terapisti tarafından değerlendirme yapılabilir.</p>
+  </details>
 
-      <h3>Hangi alanlarda çalışıyorsunuz?</h3>
-      <p>Gecikmiş konuşma, kekemelik, konuşma sesi bozuklukları, gelişimsel dil bozuklukları, otizmde dil ve iletişim, çocukluk çağı konuşma apraksisi, ses ve yutma bozuklukları alanlarında çalışıyorum.</p>
-    </div>
+  <details>
+    <summary>Ümraniye'de yüz yüze görüşme yapıyor musunuz?</summary>
+    <p>Evet. İstanbul Ümraniye'de çocuk, ergen ve yetişkinlere yönelik değerlendirme ve dil ve konuşma terapisi hizmeti sunuyorum.</p>
+  </details>
+
+  <details>
+    <summary>Hangi alanlarda çalışıyorsunuz?</summary>
+    <p>Gecikmiş konuşma, kekemelik, konuşma sesi bozuklukları, gelişimsel dil bozuklukları, otizmde dil ve iletişim, çocukluk çağı konuşma apraksisi, ses ve yutma bozuklukları alanlarında çalışıyorum.</p>
+  </details>
+
+  <details>
+    <summary>Gecikmiş konuşma için ne zaman değerlendirme alınmalı?</summary>
+    <p>Çocuğun dil ve konuşma gelişimi yaşından beklenen becerilerin gerisindeyse erken dönemde değerlendirme alınması önemlidir. Değerlendirme sonucunda çocuğun ihtiyaçları ve izlenecek süreç belirlenir.</p>
+  </details>
+
+  <details>
+    <summary>Kekemelik için dil ve konuşma terapisine başvurulabilir mi?</summary>
+    <p>Evet. Kekemelik çocuklarda ve yetişkinlerde değerlendirilebilir. Terapi süreci kişinin yaşı, kekemeliğin özellikleri ve bireysel ihtiyaçları dikkate alınarak planlanır.</p>
+  </details>
+
+  <details>
+    <summary>Dil ve konuşma terapisi ne kadar sürer?</summary>
+    <p>Terapi süresi kişiden kişiye değişir. Yaş, değerlendirme bulguları, terapinin hedefleri, seanslara katılım ve bireysel ihtiyaçlar sürecin uzunluğunu etkileyebilir.</p>
+  </details>
+
+  <details>
+    <summary>İlk değerlendirme seansında neler yapılır?</summary>
+    <p>İlk görüşmede başvuru nedeni ve gelişim öyküsü ele alınır. Ardından ihtiyaç duyulan dil, konuşma ve iletişim becerileri değerlendirilerek terapi gereksinimi ve izlenecek yol planlanır.</p>
+  </details>
+
+</div>
   </div>
 </section>
  <section class="section">
