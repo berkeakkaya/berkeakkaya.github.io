@@ -38,13 +38,39 @@ nav{min-height:84px;display:flex;align-items:center;justify-content:space-betwee
 .btn.alt{background:transparent;color:var(--ink);border:1px solid #bfc4bf;margin-left:8px}
 .hero{display:grid;grid-template-columns:1.03fr .97fr;gap:70px;align-items:center;padding:66px 0 96px}
 .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:12px;color:var(--sage);font-weight:700}
-.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(52px,6.2vw,84px);line-height:.96;margin:14px 0 18px;letter-spacing:-.04em}
+.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(52px,5.5vw,78px);line-height:1.02;margin:18px 0 22px;letter-spacing:-.035em}
 .hero .role{font-size:24px;font-weight:650;margin-bottom:20px}
 .hero p{font-size:18px;color:var(--muted);max-width:610px;margin:0 0 30px}
 .meta{margin-top:28px;color:var(--muted);font-size:14px}
 .photo{position:relative;min-width:0}
 .photo:before{content:"";position:absolute;inset:20px -18px -18px 22px;border:1px solid #c7cbc5;border-radius:180px 180px 24px 24px}
 .photo img{position:relative;width:100%;height:620px;object-fit:cover;object-position:center 44%;border-radius:180px 180px 24px 24px;display:block;background:#ece9e2}
+ .hero-info{
+  display:flex;
+  align-items:center;
+  gap:32px;
+  margin:22px 0 28px;
+}
+.hero-info-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.35;
+}
+.hero-info-item span{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  background:#f1eee4;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  color:var(--ink);
+  flex-shrink:0;
+}
 .section{padding:92px 0;border-top:1px solid var(--line)}
 .section h2{font-family:Georgia,serif;font-size:44px;font-weight:400;line-height:1.1;margin:0 0 16px}
 .lead{max-width:720px;color:var(--muted);margin:0 0 40px}
@@ -95,7 +121,23 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
   .section h2{font-size:38px}
   .cta{display:block;padding:34px}
   .cta .btn{margin-top:24px}
+.hero-info{
+  order:5;
+  width:100%;
+  gap:10px;
+  margin:6px 0 0;
+  justify-content:space-between;
 }
+.hero-info-item{
+  flex:1;
+  gap:7px;
+  font-size:12px;
+}
+.hero-info-item span{
+  width:34px;
+  height:34px;
+  font-size:15px;
+}}
 /* TELEFON GÖRÜNÜMÜ */
 @media (max-width: 700px) {
 
@@ -244,10 +286,15 @@ footer{padding:42px 0;color:var(--muted);font-size:13px}
 
 <section class="hero">
   <div>
-    <div class="eyebrow">Ümraniye, İstanbul · Online görüşme</div>
-    <h1>Dil ve Konuşma Terapisti Berke Akkaya</h1>
+  <div class="eyebrow">ÜMRANİYE, İSTANBUL &nbsp;•&nbsp; YÜZ YÜZE &amp; ONLINE GÖRÜŞME</div>
+   <h1>Dil ve<br><span class="hero-accent">Konuşma</span><br>Terapisti<br>Berke Akkaya</h1>
  <div class="role">Ümraniye Dil ve Konuşma Terapisti • Konuşma Terapisi</div>
     <p class="intro"><strong>Ümraniye ve İstanbul'da çocuk, ergen ve yetişkinlere yönelik dil ve konuşma terapisi hizmeti.</strong></p>
+   <div class="hero-info">
+ <div class="hero-info-item"><span>◯</span><div>Çocuk<br>ve Ergen</div></div>
+<div class="hero-info-item"><span>♙</span><div>Yetişkin</div></div>
+<div class="hero-info-item"><span>⌖</span><div>Ümraniye<br>İstanbul</div></div>
+</div>
    <p class="details">Konuşma terapisi kapsamında gecikmiş konuşma, kekemelik, artikülasyon ve konuşma sesi bozuklukları, dil gelişimi ve iletişim güçlüklerine yönelik değerlendirme ve terapi hizmetleri.</p>
     <div class="actions">
       <a class="btn" href="https://wa.me/905340666287?text=Merhaba%20Berke%20Bey%2C%20dil%20ve%20konu%C5%9Fma%20terapisi%20hakk%C4%B1nda%20bilgi%20almak%20ve%20randevu%20olu%C5%9Fturmak%20istiyorum." target="_blank">WhatsApp'tan İletişime Geç</a>
