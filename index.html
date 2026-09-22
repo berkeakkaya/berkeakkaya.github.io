@@ -129,17 +129,26 @@ nav{min-height:84px;display:flex;align-items:center;justify-content:space-betwee
   height:100%;
 }
 @media (max-width:900px){
-  .card::after{
-    height:100%;
-    opacity:.65;
+  .cards{
+    grid-template-columns:1fr;
+    gap:24px !important;
   }
 
   .card{
     padding-left:30px;
+    margin:0 !important;
   }
 
-  .cards{
-    gap:16px;
+  .card::after{
+    top:12px;
+    bottom:12px;
+    height:auto;
+    opacity:.65;
+    border-radius:4px;
+  }
+
+  .card:hover::after{
+    height:auto;
   }
 }
 .about{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px}
