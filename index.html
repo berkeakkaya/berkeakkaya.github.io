@@ -101,6 +101,32 @@ nav{min-height:84px;display:flex;align-items:center;justify-content:space-betwee
 .card{background:rgba(255,255,255,.58);border:1px solid var(--line);border-radius:18px;padding:26px;min-height:155px}
 .card b{font-family:Georgia,serif;font-size:21px;font-weight:400}
 .card p{color:var(--muted);font-size:14px;margin:10px 0 0}
+  .card{
+  position:relative;
+  overflow:hidden;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 35px rgba(0,0,0,.10);
+  border-color:#c9cecb;
+}
+
+.card::after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:0;
+  background:#738277;
+  transition:height .25s ease;
+}
+
+.card:hover::after{
+  height:100%;
+}
 .about{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px}
 .about p{font-size:17px;color:var(--muted);margin-top:0}
 .edu{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
