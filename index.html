@@ -424,6 +424,46 @@ height:30px;
   width: 100% !important;
   box-sizing: border-box !important;
 }
+
+.instagram-section{
+  padding:70px 0;
+}
+
+.instagram-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin:28px 0 24px;
+}
+
+.instagram-grid a{
+  display:block;
+  overflow:hidden;
+  border-radius:18px;
+}
+
+.instagram-grid img{
+  display:block;
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  transition:transform .25s ease;
+}
+
+.instagram-grid a:hover img{
+  transform:scale(1.03);
+}
+
+.instagram-btn{
+  display:inline-flex;
+}
+
+@media(max-width:600px){
+  .instagram-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+}
 </style>
  <div class="wrap">
 <nav>
@@ -778,7 +818,30 @@ height:30px;
   }
 }
 </style>
- <section class="section">
+ 
+   <section class="section instagram-section">
+  <div class="eyebrow">INSTAGRAM'DAN</div>
+  <h2>Güncel içerikler</h2>
+  <p class="lead">Dil, konuşma ve iletişim gelişimi hakkında paylaştığım güncel içeriklere göz atabilirsiniz.</p>
+
+  <div class="instagram-grid">
+    <a href="https://www.instagram.com/dktberkeakkaya/" target="_blank">
+      <img src="Kekemelik.jpeg" alt="Kekemelik hakkında bilgilendirici içerik">
+    </a>
+    <a href="https://www.instagram.com/dktberkeakkaya/" target="_blank">
+      <img src="4 öneri.jpeg" alt="Dil ve konuşma gelişimi için öneriler">
+    </a>
+    <a href="https://www.instagram.com/dktberkeakkaya/" target="_blank">
+      <img src="3 öneri.jpeg" alt="Çocuklarda konuşma gelişimi hakkında öneriler">
+    </a>
+    <a href="https://www.instagram.com/dktberkeakkaya/" target="_blank">
+      <img src="2 yaş.jpeg" alt="2 yaş dil ve konuşma gelişimi">
+    </a>
+  </div>
+
+  <a class="btn alt instagram-btn" href="https://www.instagram.com/dktberkeakkaya/" target="_blank">Instagram'da Daha Fazlasını Gör →</a>
+</section>
+   <section class="section">
   <div class="cta">
     <div>
      
